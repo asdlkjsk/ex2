@@ -5,7 +5,7 @@
 	<title>Home</title>
 </head>
 <body>
-
+<a href="notice/noticeList">NoticeList</a>
 <h1>Master add</h1>
 <h1>master add2</h1>
 <h1>

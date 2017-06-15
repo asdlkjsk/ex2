@@ -10,16 +10,17 @@ import java.util.List;
 import javax.inject.Inject;
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.choa.util.DBConnector;
 import com.choa.util.RowMaker;
 
-@Repository
+@Repository	//("id")
 //NoticeDAO noticeDAO = new NoticeDAO();
 public class NoticeDAO {
 	
-	@Inject
+	@Autowired
 	private DataSource dataSource;
 	
 	public void setDataSource(DataSource dataSource) {

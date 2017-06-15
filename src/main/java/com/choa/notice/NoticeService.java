@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.choa.util.PageMaker;
@@ -12,8 +14,13 @@ import com.choa.util.PageMaker;
 //NoticeService noticeService = new NoticeService();
 public class NoticeService {
 	
-	@Inject
+	@Autowired
+	//dao에서 notice 로 해놨으니 여기도 notice로
 	private NoticeDAO noticeDAO;
+	
+	public void test(){
+		System.out.println(noticeDAO);
+	}
 	
 	/*//Constructor 생성자
 	public NoticeService(NoticeDAO noticeDAO){
